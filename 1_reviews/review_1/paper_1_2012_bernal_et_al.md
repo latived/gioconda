@@ -3,14 +3,48 @@ BERNAL, Jorge; SÁNCHEZ, Javier; VILARINO, Fernando. Towards automatic polyp det
 ---
 
 Research questions and reason for the study:
+---
+
+This study tries to develop a model of polyp appearance that makes polyp detection automatic.
+Regions of interest are segmented, followed by specific descriptions and its consequent classification.
+
+- Reduction of miss rate.
+- Add significant value to the colonoscopy procedure by means of CAD.
+
+Basically, from analysis of colonoscopy images to auxiliary diagnostic.
 
 Hypothesis or hypotheses tested:
+---
+
+Fact: intensity valleys appear to surround polyps as the light of the
+colonoscope and the camera are in the same direction.
+
+Hipothesis: valley and ridge information as cue to detect polyps.
+    - Look for several cues to guide a model formation.
+
+Extendend work? See ref 8 in paper.
 
 How the hypothesis was tested:
+---
+
+Three stages: region segmentation, region description and region
+classification.
+
 
 The findings:
+---
+
+First contribution: region segmentation stage, in which a image is decomposed
+in a minimum number of informative region parts. One of these contains a polyp
+in a complete way.
+
+Second contribution: introduction of the Sector Accumulation--Depth of Valleys
+Accumulation (SA-DOVA).
 
 How the findings were interpreted:
+---
+
+
 
 ---
 
