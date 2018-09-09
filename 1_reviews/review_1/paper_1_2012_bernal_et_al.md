@@ -1,5 +1,7 @@
 BERNAL, Jorge; SÁNCHEZ, Javier; VILARINO, Fernando. Towards automatic polyp detection with a polyp appearance model. Pattern Recognition, v. 45, n. 9, p. 3166-3182, 2012.
 
+**Status**: 4/7 Sections
+
 ---
 
 Research questions and reason for the study:
@@ -30,16 +32,20 @@ How the hypothesis was tested:
 Three stages: region segmentation, region description and region
 classification.
 
+First contribution: region segmentation stage, in which a image is decomposed
+in a minimum number of informative region parts. One of these contains a polyp
+in a complete way.
+    - Input image -> Image preprocessing -> Image segmentation -> [Region
+      Merging: Region information-based <--> Depth of valleys-based] -->
+      Segmented image
+
+Second contribution: introduction of the Sector Accumulation--Depth of Valleys
+Accumulation (SA-DOVA).
 
 The findings:
 ---
 
-First contribution: region segmentation stage, in which a image is decomposed
-in a minimum number of informative region parts. One of these contains a polyp
-in a complete way.
 
-Second contribution: introduction of the Sector Accumulation--Depth of Valleys
-Accumulation (SA-DOVA).
 
 How the findings were interpreted:
 ---
