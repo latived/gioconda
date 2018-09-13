@@ -1,8 +1,45 @@
 BERNAL, Jorge; SÁNCHEZ, Javier; VILARINO, Fernando. Towards automatic polyp detection with a polyp appearance model. Pattern Recognition, v. 45, n. 9, p. 3166-3182, 2012.
 
-**Status**: 4/7 Sections
 
 ---
+
+
+Related work (as main paper, this will guide me in my research):
+===
+
+In the case of polyp detection, the bibliography can be divided into two categories:
+
+- Polyp detection by means of shape descriptors; and
+	- _Shape descriptors is not our focus for now..._
+- Polyp detection by means of **texture (and color) descriptors**:
+
+	1. P. Li, K. Chan, S. Krishnan, Learning a multi-size
+	   patch-based hybrid kernel machine ensemble for abnormal region
+	   detection in colonoscopic images, 2005 IEEE Computer Society Conference on
+	   Computer Vision and Pattern Recognition (CVPR’05) (2005).
+	2. **S. Ameling, S. Wirth, D. Paulus, G. Lacey, F.  Vilariño,
+	   Texture-based polyp detection in colonoscopy, Bildverarbeitung f¨ur
+	   die Medizin 2009 (2009) 346–350. _[in progress: study, reproduction, contributions]_**
+	3. Karkanis, S.A. and Iakovidis, D.K. and Maroulis, D.E. et al.,
+	   Computer-aided tumor detection in endoscopic video using color
+	   wavelet features, Information Technology in Biomedicine, IEEE Transactions on 7
+	   (2003) 141–152.
+	4. M. Tjoa, S. Krishnan, Feature extraction for the analysis of colon
+	   status from the endoscopic images, BioMedical Engineering OnLine 2
+	   (2003) 
+	5. M. Coimbra, J. Cunha, MPEG-7 visual descriptors and contributions
+	   for automated feature extraction in capsule endoscopy, Circuits and
+	   Systems for Video Technology, IEEE Transactions on 16 (2006) 628–637.
+	6. Bernal, J. and Vilariñoo, F. and Sánchez, J., Feature Detectors and
+	   Feature Descriptors: Where We Are Now, Technical Report 154,
+	   Computer Vision Center & Computer Science Department Universitat Autònoma de
+	   Barcelona, 2010.
+
+
+Useful questions
+===
+
+**Status**: 4/7 Sections
 
 Research questions and reason for the study:
 ---
