@@ -29,7 +29,7 @@ p1_label_dir = None
 def set_imgs_dirs():
     # Change to directory with dataset (this notebook location)
     proj_root = '/content/drive/My Drive/Projetos/Colab/polyp_segmentation/'
-    os.chdir(proj_root)
+
     # Defining actual folder and new folder where only useful images will go
     db_folder = os.path.join(proj_root, "CVC-ColonDB/CVC-ColonDB/CVC-ColonDB/")
 
@@ -41,8 +41,9 @@ def set_imgs_dirs():
     p1_train_dir = os.path.join(proj_root, "proc_1/train")
     p1_label_dir = os.path.join(proj_root, "proc_1/train_masks")
 
-    # dirs = {'raw': [raw_train_dir, raw_label_dir], 'processed' : [p1_train_dir, p1_label_dir] }
+    dirs = {'raw': [raw_train_dir, raw_label_dir], 'processed' : [p1_train_dir, p1_label_dir] }
 
+    return dirs
 
 def _create_check_dirs(dirs):
     for k in dirs.keys():
