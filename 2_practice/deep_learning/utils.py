@@ -178,9 +178,6 @@ if __name__ == '__main__':
     check_dirs(dirs)
     unzip_colondb()  # Only needed once
 
-    # Connecting to drive...
-    drive.mount('/content/drive')
-
     if not (check_number_imgs(raw_train_dir) or check_number_imgs(raw_label_dir)):
         # Raw images
         r_origs, r_masks, r_orig_fns, r_mask_fns = process_imgs(db_folder)
