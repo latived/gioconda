@@ -2,7 +2,7 @@
 This file contains utility methods that I have used or I am using for deep learning,
 more especifically medical imagem segmentation.
 
-Qua, 31 Out 2018
+Qua, 31 Out 2018.
 """
 
 import os
@@ -137,23 +137,23 @@ def process_imgs(folder, actual_ext='tiff', out_ext='jpeg', crop=False):
 
     for (seq_o, seq_m) in zip(fn_original.values(), fn_mask.values()):
         for (original, mask) in zip(seq_o, seq_m):
-        # Out images
-        o_im = Image.open(os.path.join(folder, original))
-        m_im = Image.open(os.path.join(folder, mask))
+            # Out images
+            o_im = Image.open(os.path.join(folder, original))
+            m_im = Image.open(os.path.join(folder, mask))
 
-        if crop:
-            o_cropped, m_cropped = get_cropped_imgs(o_im, m_im)
-            # Append
-            originals.append(o_cropped)
-            masks.append(m_cropped)
-        else:
-            originals.append(o_im)
-            masks.append(m_im)
+            if crop:
+                o_cropped, m_cropped = get_cropped_imgs(o_im, m_im)
+                # Append
+                originals.append(o_cropped)
+                masks.append(m_cropped)
+            else:
+                originals.append(o_im)
+                masks.append(m_im)
 
-        o_out, m_out = get_out_names(original, mask, out_ext)
+            o_out, m_out = get_out_names(original, mask, out_ext)
 
-        original_names.append(o_out)
-        mask_names.append(m_out)
+            original_names.append(o_out)
+            mask_names.append(m_out)
 
     return originals, masks, original_names, mask_names
 
