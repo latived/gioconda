@@ -7,17 +7,9 @@ Qua, 31 Out 2018.
 
 import os
 import zipfile
-import functools
-
 import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-import matplotlib as mpl
 
 from PIL import Image
-
-mpl.rcParams['axes.grid'] = False
-mpl.rcParams['figure.figsize'] = (12, 12)
 
 proj_root = None
 db_folder = None
@@ -41,7 +33,7 @@ def set_imgs_dirs():
     p1_train_dir = os.path.join(proj_root, "proc_1/train")
     p1_label_dir = os.path.join(proj_root, "proc_1/train_masks")
 
-    dirs = {'raw': [raw_train_dir, raw_label_dir], 'processed' : [p1_train_dir, p1_label_dir] }
+    dirs = {'other' : [proj_root, db_folder], 'raw': [raw_train_dir, raw_label_dir], 'processed' : [p1_train_dir, p1_label_dir] }
 
     return dirs
 
@@ -49,7 +41,7 @@ def check_dirs(dirs):
     for k in dirs.keys():
         for d in dirs[k]:
             if not os.path.exists(d):
-                os.makedirs()
+                os.makedirs(d)
             else:
                 print("{} already created.".format(d))
 
