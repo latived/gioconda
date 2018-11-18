@@ -11,29 +11,27 @@ import numpy as np
 
 from PIL import Image
 
-proj_root = None
 db_folder = None
 raw_train_dir = None
 raw_label_dir = None
 p1_train_dir = None
 p1_label_dir = None
 
-def set_imgs_dirs():
+def set_imgs_dirs(root):
     # Change to directory with dataset (this notebook location)
-    proj_root = '/content/drive/My Drive/Projetos/Colab/polyp_segmentation/'
 
     # Defining actual folder and new folder where only useful images will go
-    db_folder = os.path.join(proj_root, "CVC-ColonDB/CVC-ColonDB/CVC-ColonDB/")
+    db_folder = os.path.join(root, "CVC-ColonDB/CVC-ColonDB/CVC-ColonDB/")
 
     # Raw
-    raw_train_dir = os.path.join(proj_root, "raw/train")
-    raw_label_dir = os.path.join(proj_root, "raw/train_masks")
+    raw_train_dir = os.path.join(root, "raw/train")
+    raw_label_dir = os.path.join(root, "raw/train_masks")
 
     # Processed: cropped
-    p1_train_dir = os.path.join(proj_root, "proc_1/train")
-    p1_label_dir = os.path.join(proj_root, "proc_1/train_masks")
+    p1_train_dir = os.path.join(root, "proc_1/train")
+    p1_label_dir = os.path.join(root, "proc_1/train_masks")
 
-    dirs = {'other' : [proj_root, db_folder], 'raw': [raw_train_dir, raw_label_dir], 'processed' : [p1_train_dir, p1_label_dir] }
+    dirs = {'other' : [root, db_folder], 'raw': [raw_train_dir, raw_label_dir], 'processed' : [p1_train_dir, p1_label_dir] }
 
     return dirs
 
@@ -164,7 +162,7 @@ def check_number_imgs(folder):
         return False
 
 
-if __name__ == '__main__':
+def main():
     # We are inside 2_review/deep_learning here.
     dirs = set_imgs_dirs()
     check_dirs(dirs)
